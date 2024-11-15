@@ -88,16 +88,3 @@ Eksperimen data:
 1. *datahasil1* dan *datahasil2* masih menggunakan *Rasionalitas*.
 2. *Gender* dan *Grup Umur* tidak memiliki nilai komposit di *datahasil3* dan *datahasil4*.
 3. Pada *datahasil 5* *Klasifikasi* terlalu fokus pada *Gender* dan tidak mencakup variabel lain.
-
-datahasil1 rasionalitas k-mean 
-datahasil2 rasionalitas threshold
-datahasil3 fix threshold 3.0
-datahasil4 fix threshold 2.7
-datahasil5 fix k-mean
-datahasil6 fix custom threshold dengan rasio 27:73
-datahasill8 fix custom threshold dengan rasio 44:56
-
-Problem
-1 dan 2 rasionalitas salah
-3 dan 4 gender dan umur tidak punya value
-5 klasifikasi focus pada gender dan tidak value lain
