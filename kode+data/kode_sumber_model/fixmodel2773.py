@@ -1,6 +1,8 @@
-# JIKA KODE TIDAK BERJALAN, SILAHKAN INSTALL LIBRARY PYTHON YANG SESUAI DAN DIREKTORI LOAD DATASET SESUAI
+# JIKA KODE TIDAK BERJALAN, SILAHKAN GUNAKAN ENVIRONMENT AIS3 ATAU INSTALL LIBRARY PYTHON YANG SESUAI 
+# DAN PATHLOAD DATASET SESUAI
 
 # Tahap 1 : Import library
+import os
 import numpy as np # linear algebra
 import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt # data visualization
@@ -10,7 +12,10 @@ from tkinter import messagebox
 import customtkinter as ctk
 
 # Tahap 2 : Load Dataset
-df = pd.read_csv('datahasil7.csv')
+# library os disini digunakan agar bisa menangani path ke data secara otomatis. Jika tidak berjalan, ubah path data secara manual
+script_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(script_dir, 'datahasil6.csv')
+df = pd.read_csv(file_path)
 
 # Opsional, pengecekan info dataset
 print("Berikut informasi tentang data :")
